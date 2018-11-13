@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+<h1>hello world</h1>
+
+  <script type="text/javascript">
+    const alwaysTrue = true;
+
+const myBarn = petMe => {
+  let animals = {
+    petMe,
+  };
+
+  if (alwaysTrue) {
+    let animals = {
+      petMe: "pig",
+    };
+    const greeting = thisOne => `This animal should be a pig; it is a: ${thisOne}.`;
+
+    console.log(greeting);
+  }
+
+  console.log('This animal should be a dog; it is a: ' + animals.petMe);  // 2
+}
+
+myBarn("dog");
+  </script>
+</body>
+</html>
+
